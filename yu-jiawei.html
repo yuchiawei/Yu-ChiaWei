@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>游家瑋講師｜企業凝聚・團隊領導・體驗式學習</title>
+  <meta name="description" content="游家瑋講師，邁茁企管顧問有限公司專任講師，專精團隊目標、個人成長、大型講座三大系列課程。服務 Google、CHANEL、統一企業等百家企業，歡迎邀約企業內訓。">
+  <meta name="keywords" content="游家瑋,游家瑋講師,企業內訓,團隊建立,OKR,領導力,體驗式學習,簡報設計,情緒管理,邁茁企管">
+  <meta name="author" content="游家瑋">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="游家瑋講師｜企業培訓・團隊領導專家">
+  <meta property="og:description" content="游家瑋講師，專精企業凝聚、團隊領導、個人成長課程，服務超過百家知名企業。">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="游家瑋講師">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "游家瑋",
+    "alternateName": "游家瑋講師",
+    "jobTitle": "專任講師",
+    "description": "專精企業凝聚、團隊領導、個人成長課程，服務超過百家知名企業",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "邁茁企管顧問有限公司"
+    },
+    "telephone": "0989-542-169",
+    "email": "give_up_never@hotmail.com",
+    "knowsAbout": ["團隊建立","OKR","領導力","簡報設計","情緒管理","時間管理"]
+  }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #c9933a;
+      --gold-light: #e8b86d;
+      --dark: #111827;
+      --dark2: #1a2740;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --border: #e5e5e5;
+      --bg: #f9f8f6;
+      --card: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(17,24,39,0.97);
+      backdrop-filter: blur(8px);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 54px;
+      border-bottom: 1px solid #ffffff14;
+    }
+    .nav-brand {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 15px; font-weight: 700;
+      color: var(--gold-light); letter-spacing: 0.05em;
+    }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 12px; color: #aaa;
+      letter-spacing: 0.1em; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+
+    /* HERO */
+    .hero {
+      background: var(--dark);
+      padding: 3.5rem 2rem 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .hero-photo {
+      flex: 0 0 260px;
+      align-self: flex-end;
+    }
+    .hero-photo img {
+      width: 260px;
+      display: block;
+      filter: drop-shadow(0 8px 32px rgba(0,0,0,0.4));
+    }
+    .hero-info {
+      flex: 1;
+      padding-bottom: 3rem;
+    }
+    .hero-tag {
+      font-size: 10px; letter-spacing: 0.22em;
+      color: var(--gold); border: 1px solid #c9933a44;
+      display: inline-block; padding: 3px 14px;
+      border-radius: 20px; margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 2.6rem; font-weight: 900;
+      color: #fff; letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+    }
+    .hero-position {
+      font-size: 13px; color: #8899aa;
+      font-weight: 300; margin-bottom: 1.4rem;
+      line-height: 1.9;
+    }
+    .gold-divider {
+      width: 48px; height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      margin-bottom: 1.4rem;
+      border-radius: 1px;
+    }
+    .hero-stats {
+      display: flex; gap: 1.8rem;
+    }
+    .stat-num {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.6rem; font-weight: 900;
+      color: var(--gold-light);
+    }
+    .stat-label {
+      font-size: 11px; color: #8899aa;
+      letter-spacing: 0.08em;
+    }
+
+    /* FULL-WIDTH DARK BAND */
+    .hero-wrap {
+      background: var(--dark);
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    /* SECTION HEADER */
+    .sec-eyebrow {
+      font-size: 10px; letter-spacing: 0.25em;
+      color: var(--gold); font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .sec-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.35rem; font-weight: 700;
+      color: var(--text); margin-bottom: 1.5rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* BIO CARD */
+    .bio-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.8rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .bio-group { margin-bottom: 1.3rem; }
+    .bio-group:last-child { margin-bottom: 0; }
+    .bio-label {
+      font-size: 11px; letter-spacing: 0.15em;
+      color: var(--gold); font-weight: 500;
+      margin-bottom: 8px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .bio-label::after {
+      content: ''; flex: 1; height: 1px; background: var(--border);
+    }
+    .bio-item {
+      display: flex; gap: 8px; align-items: flex-start;
+      font-size: 14px; line-height: 2;
+    }
+    .bio-dot {
+      flex-shrink: 0; margin-top: 11px;
+      width: 5px; height: 5px;
+      border-radius: 50%; background: var(--gold);
+    }
+
+    /* COURSES */
+    .course-series { margin-bottom: 2rem; }
+    .series-label {
+      font-size: 12px; font-weight: 500;
+      color: var(--gold); letter-spacing: 0.1em;
+      padding: 5px 14px;
+      background: #c9933a12;
+      border-left: 3px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .course-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .course-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+    }
+    .course-name {
+      font-size: 13px; font-weight: 500;
+      color: var(--text); line-height: 1.5;
+    }
+
+    /* CLIENT LOGOS */
+    .logo-grid {
+      display: flex; flex-wrap: wrap;
+      gap: 10px; margin-bottom: 2rem;
+    }
+    .logo-chip {
+      padding: 8px 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px; font-weight: 500;
+      color: var(--text);
+      transition: border-color 0.2s;
+    }
+    .logo-chip:hover { border-color: var(--gold); }
+
+    /* CLIENT LIST */
+    .client-section { margin-bottom: 1.5rem; }
+    .client-category {
+      font-size: 11px; letter-spacing: 0.15em;
+      color: var(--gold); font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .client-names {
+      font-size: 13px; color: var(--text-muted);
+      line-height: 2.2;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 1.5rem;
+    }
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.2rem;
+      display: flex; gap: 12px; align-items: center;
+    }
+    .contact-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: var(--dark);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .contact-icon svg { width: 16px; height: 16px; }
+    .contact-label {
+      font-size: 10px; color: var(--text-muted);
+      letter-spacing: 0.1em; margin-bottom: 2px;
+    }
+    .contact-value {
+      font-size: 13px; font-weight: 500; color: var(--text);
+    }
+
+    /* CTA */
+    .cta-box {
+      background: var(--dark);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    .cta-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.2rem; color: #fff;
+      margin-bottom: 0.6rem;
+    }
+    .cta-sub {
+      font-size: 13px; color: #8899aa;
+      margin-bottom: 1.5rem; line-height: 1.9;
+    }
+    .cta-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 500;
+      padding: 11px 24px; border-radius: 10px;
+      letter-spacing: 0.06em; transition: opacity 0.2s;
+      cursor: pointer;
+    }
+    .btn svg { width: 15px; height: 15px; }
+    .btn-gold { background: var(--gold); color: #fff; }
+    .btn-line { background: #06C755; color: #fff; }
+    .btn-fb { background: #1877F2; color: #fff; }
+    .btn:hover { opacity: 0.8; }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 12px; color: #555;
+      border-top: 1px solid #ffffff0f;
+      margin-top: 0;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .hero { flex-direction: column; align-items: center; gap: 1rem; padding-top: 2.5rem; }
+      .hero-photo { flex: none; }
+      .hero-photo img { width: 180px; }
+      .hero-info { padding-bottom: 2rem; text-align: center; }
+      .gold-divider { margin: 0 auto 1.4rem; }
+      .hero h1 { font-size: 2rem; }
+      .hero-stats { justify-content: center; }
+      nav .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">游家瑋 講師</div>
+  <ul class="nav-links">
+    <li><a href="#about">關於我</a></li>
+    <li><a href="#courses">課程</a></li>
+    <li><a href="#clients">合作企業</a></li>
+    <li><a href="#contact">邀約</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero-wrap">
+  <div class="hero">
+    <div class="hero-info">
+      <div class="hero-tag">企業培訓 · 團隊領導 · 個人成長</div>
+      <h1>游家瑋 講師</h1>
+      <div class="hero-position">
+        邁茁企管顧問有限公司｜專任講師<br>
+        競爭LEAD教育中心｜共同創辦人
+      </div>
+      <div class="gold-divider"></div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">100<span style="font-size:1.1rem">+</span></div>
+          <div class="stat-label">合作企業</div>
+        </div>
+        <div>
+          <div class="stat-num">3</div>
+          <div class="stat-label">核心課程系列</div>
+        </div>
+        <div>
+          <div class="stat-num">18<span style="font-size:1.1rem">+</span></div>
+          <div class="stat-label">授課主題</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="去背的A7408303_V1.png" alt="游家瑋講師專業形象照">
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <p class="sec-eyebrow">ABOUT</p>
+    <h2 class="sec-title">關於游家瑋講師</h2>
+    <div class="bio-card">
+      <div class="bio-group">
+        <div class="bio-label">現任</div>
+        <div class="bio-item"><div class="bio-dot"></div>邁茁企管顧問有限公司｜專任講師</div>
+      </div>
+      <div class="bio-group">
+        <div class="bio-label">經歷</div>
+        <div class="bio-item"><div class="bio-dot"></div>競爭LEAD教育中心｜共同創辦人</div>
+        <div class="bio-item"><div class="bio-dot"></div>台灣勞動力發展署｜專任業師</div>
+        <div class="bio-item"><div class="bio-dot"></div>大誠保險經紀人股份有限公司｜培訓顧問</div>
+      </div>
+      <div class="bio-group">
+        <div class="bio-label">專業領域</div>
+        <div class="bio-item"><div class="bio-dot"></div>企業文化塑造・團隊建立與激勵・OKR目標設定</div>
+        <div class="bio-item"><div class="bio-dot"></div>領導力培訓・組織經營與管理</div>
+        <div class="bio-item"><div class="bio-dot"></div>簡報設計・時間管理・情緒管理與壓力調適</div>
+        <div class="bio-item"><div class="bio-dot"></div>大型講座・生涯規劃・品格教育・生命激勵</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" style="background:#fff;">
+  <div class="container">
+    <p class="sec-eyebrow">COURSES</p>
+    <h2 class="sec-title">授課主題</h2>
+
+    <div class="course-series">
+      <div class="series-label">① 團隊目標系列</div>
+      <div class="course-grid">
+        <div class="course-card"><div class="course-name">企業文化塑造共識營</div></div>
+        <div class="course-card"><div class="course-name">團隊建立與激勵</div></div>
+        <div class="course-card"><div class="course-name">無頭銜的團隊領導力</div></div>
+        <div class="course-card"><div class="course-name">組織經營與管理</div></div>
+        <div class="course-card"><div class="course-name">OKR 年度目標設定</div></div>
+        <div class="course-card"><div class="course-name">高績效會議經營術</div></div>
+      </div>
+    </div>
+
+    <div class="course-series">
+      <div class="series-label">② 個人成長系列</div>
+      <div class="course-grid">
+        <div class="course-card"><div class="course-name">簡報設計表達</div></div>
+        <div class="course-card"><div class="course-name">活動企劃撰寫</div></div>
+        <div class="course-card"><div class="course-name">跳脫框架思維力實戰工作坊</div></div>
+        <div class="course-card"><div class="course-name">時間管理技巧</div></div>
+        <div class="course-card"><div class="course-name">優質人際互動</div></div>
+        <div class="course-card"><div class="course-name">情緒管理及壓力調適</div></div>
+      </div>
+    </div>
+
+    <div class="course-series" style="margin-bottom:0">
+      <div class="series-label">③ 大型講座系列</div>
+      <div class="course-grid">
+        <div class="course-card"><div class="course-name">品格教育系列</div></div>
+        <div class="course-card"><div class="course-name">個人生涯規劃</div></div>
+        <div class="course-card"><div class="course-name">服務學習系列</div></div>
+        <div class="course-card"><div class="course-name">生命激勵系列</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients">
+  <div class="container">
+    <p class="sec-eyebrow">CLIENTS</p>
+    <h2 class="sec-title">客戶實績</h2>
+
+    <!-- 代表品牌 LOGO 區 -->
+    <div style="margin-bottom:2rem;">
+      <div style="font-size:11px;letter-spacing:0.15em;color:var(--gold);font-weight:500;margin-bottom:12px;">代表品牌</div>
+      <div class="logo-grid">
+        <div class="logo-chip">Google</div>
+        <div class="logo-chip">CHANEL</div>
+        <div class="logo-chip">統一企業</div>
+        <div class="logo-chip">New Balance</div>
+        <div class="logo-chip">聯合利華</div>
+        <div class="logo-chip">台灣拜耳</div>
+        <div class="logo-chip">NetApp</div>
+        <div class="logo-chip">美商科磊</div>
+        <div class="logo-chip">亞德諾半導體</div>
+        <div class="logo-chip">中國信託</div>
+        <div class="logo-chip">富邦人壽</div>
+        <div class="logo-chip">資誠聯合會計師事務所</div>
+        <div class="logo-chip">Krispy Kreme</div>
+      </div>
+    </div>
+
+    <!-- 分類列表 -->
+    <div class="bio-card">
+      <div class="client-section">
+        <div class="client-category">▸ 科技業</div>
+        <div class="client-names">Google、NetApp、美商科磊、亞德諾半導體、晶達光電、志倢科技、亞昕資訊、凌廣工業</div>
+      </div>
+      <div class="client-section">
+        <div class="client-category">▸ 金融保險</div>
+        <div class="client-names">中國信託、彰化銀行、台新證券、富邦人壽、南山人壽、國泰人壽、全球人壽、遠雄人壽、台灣人壽、凱基人壽、大誠保經、錠嵂保經、精聯保經、威盛保經、資誠聯合會計師事務所、勤業眾信會計師事務所、SGS</div>
+      </div>
+      <div class="client-section">
+        <div class="client-category">▸ 大型連鎖 · 餐飲</div>
+        <div class="client-names">統一企業、SOGO、太古可口可樂、Krispy Kreme、統一超食代、蝸牛義大利連鎖餐廳、安心食品服務（摩斯漢堡）、名留集團、哥德式</div>
+      </div>
+      <div class="client-section">
+        <div class="client-category">▸ 品牌製造</div>
+        <div class="client-names">New Balance、CHANEL、日立冷氣、聯合利華、台灣拜耳、花仙子、鈺祥企業、台灣諾保科、端強實業、葡萄王、BELFOR、法國雅高國際飯店</div>
+      </div>
+      <div class="client-section">
+        <div class="client-category">▸ 生技 · 醫療</div>
+        <div class="client-names">東杰生醫、瑞億生技、花蓮醫院</div>
+      </div>
+      <div class="client-section" style="margin-bottom:0">
+        <div class="client-category">▸ 政府機關 · 非營利組織</div>
+        <div class="client-names">勞動部勞動力發展署、教育部青年發展署、桃園市政府、臺北市公共運輸處、公務人員發展中心、中華民國紅十字會、萬海航運慈善基金會、家扶基金會、中國家庭計劃協會、國家研究院、台北市進出口同業公會、扶輪社、全台各大專院校教師研習及幹部訓練</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:#fff;">
+  <div class="container">
+    <p class="sec-eyebrow">CONTACT</p>
+    <h2 class="sec-title">邀約合作</h2>
+    <div class="contact-grid">
+      <a class="contact-card" href="tel:0989542169">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.21 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-label">PHONE</div>
+          <div class="contact-value">0989-542-169</div>
+        </div>
+      </a>
+      <a class="contact-card" href="mailto:give_up_never@hotmail.com">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-label">EMAIL</div>
+          <div class="contact-value" style="font-size:11px;">give_up_never@hotmail.com</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="cta-box">
+      <h2 class="cta-title">立即邀約游家瑋講師</h2>
+      <p class="cta-sub">
+        企業內訓 · 年會活動 · 主管共識營 · 校園演講<br>
+        提供客製化課程方案，歡迎洽談
+      </p>
+      <div class="cta-btns">
+        <a class="btn btn-gold" href="mailto:give_up_never@hotmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email 邀約
+        </a>
+        <a class="btn btn-line" href="https://line.me/R/ti/p/@694jszmv" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE 聯繫
+        </a>
+        <a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=61566500365213" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 游家瑋講師 · 邁茁企管顧問有限公司</p>
+  <p style="margin-top:6px;">企業培訓 · 團隊領導 · 個人成長</p>
+</footer>
+
+</body>
+</html>
