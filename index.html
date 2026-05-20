@@ -7,7 +7,41 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-7K71H5WQJB');
+  gtag('config', 'G-7K71H5WQJB', {
+    'send_page_view': true
+  });
+
+  // 追蹤 LINE / Email / Facebook 聯絡按鈕點擊
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href*="line.me"]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'contact_click', { method: 'LINE' });
+      });
+    });
+    document.querySelectorAll('a[href*="mailto"]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'contact_click', { method: 'Email' });
+      });
+    });
+    document.querySelectorAll('a[href*="facebook"]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'contact_click', { method: 'Facebook' });
+      });
+    });
+    // 追蹤問卷區塊是否被看見
+    var formSection = document.getElementById('contact-form');
+    if (formSection && 'IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            gtag('event', 'section_view', { section: '聯絡我們' });
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+      observer.observe(formSection);
+    }
+  });
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1282,6 +1316,13 @@ function cfSubmit(type) {
   }).then(function() {
     document.getElementById('form-' + type).style.display = 'none';
     document.getElementById('cf-success').style.display = 'block';
+
+    // GA4 轉換事件追蹤
+    gtag('event', 'form_submit', {
+      event_category: '問卷',
+      event_label: type === 'corp' ? '企業培訓' : '校園講座',
+      form_type: type === 'corp' ? '企業培訓' : '校園講座'
+    });
   }).catch(function() {
     btn.disabled = false;
     btn.textContent = type === 'corp' ? '📩 送出企業培訓諮詢' : '📩 送出校園講座諮詢';
